@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Управление рассылками</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="main__title">Управление рассылками</h1>
+            <p class="header__text">Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. <br>
+                Но пожалуйста, исключите только те категории, которые действительно вас не интереуют.
+                Мы обещаем слать только полезные письма где 😊
+            </p>
+        </div>
+    </header>
+    <section class="main__settings">
+        <div class="container">
+            <h3 class="settings__title">Общие уведомления</h3>
+            <div class="settings__wrapper">
+                <ul class="settings-list">
+                    <li class="settings-item">
+                        <label>
+                            <p class="settings__item-text">Приватная серия</p>
+                            <span class="settings__span">4 полезных письма в течении месяца</span>
+                        </label>
+                        <div class="switch">
+                            <input type="checkbox" checked>
+                        </div>
+                    </li>
+
+                    <li class="settings-item">
+                        <label for="switch2">
+                            <p class="settings__item-text mb">Образовательные вебинары</p>
+                            <span class="settings__span">Бесплатные вебинары проходят 1 раз в 2 недели. Вы будете
+                                получать 2 письма с напоминанием о предстоящем вебинаре</span>
+                        </label>
+                        <div class="switch">
+                            <input type="checkbox">
+                        </div>
+                    </li>
+                    <li class="settings-item">
+                        <p class="settings__item-text">
+                            Личные сообщения <a class="info-text" href="#"><img class="info-img" src="images/i-icon.png"
+                                    alt=""></a>
+                        </p>
+                        <div class="switch">
+                            <input type="checkbox" checked>
+                        </div>
+                    <li class="settings__span">
+                        <select class="notification-list settings__span">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+
+                    </li>
+                </ul>
+                <ul class="settings-descr">
+                    <li class="settings__descr-item">4 полезных письма в течении месяца</li>
+                    <li class="settings__descr-item mb-sl">Бесплатные вебинары проходят 1 раз в 2 недели. Вы будете
+                        получать 2 письма с напоминанием о предстоящем вебинаре</li>
+                    <li class="settings-descr">
+                        <select class="notification-list ">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="settings__title ">Уведомления по Сайтам</h3>
+            <div class="settings__wrapper st-mb">
+                <ul class="settings-list">
+                    <li class="settings-item">
+                        <p class="settings__item-text news">Новости</p>
+                        <div class="switch">
+                            <input type="checkbox">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="settings__title title-sm">Поисковые агенты</h3>
+            <div class="settings__wrapper  st-mb">
+                <ul class="settings-list">
+                    <h4 class="settings__item-title">Бизнес</h4>
+                    <li class="settings-item-list content_block2">Seo <a class="close content_toggle2" href="#"><img
+                                src="images/close.png" alt=""></a></li>
+                    <li class="settings-item-list content_high2">Продвижение <a class="close content_close2"
+                            href="#"><img src="images/close.png" alt=""></a></li>
+                    <li class="settings-item-list content_up2">Аналитика <a class="close content_down2" href="#"><img
+                                src="images/close.png" alt=""></a></li>
+                    <button class="settings-item__btn openModal btn-mt">Детали</button>
+
+                    <dialog class="modal">
+                        <div class="modal__inner">
+                            <p class="dialog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                suscipit amet sequi in labore eum, est odio, libero id temporibus at dignissimos quasi
+                                dolorum animi illum voluptatum recusandae non? Culpa eos reiciendis non iusto id, cumque
+                                neque sit dignissimos enim laborum adipisci minima illo quibusdam in dolorum
+                                consectetur, harum ut numquam eum! Dolorum, harum dolores!</p>
+                            <button class="close-modal"><img src="images/btn-close.png" alt="Close"></button>
+                        </div>
+                    </dialog>
+
+                </ul>
+                <div class="switch switcher sw-mr">
+                    <input type="checkbox" checked>
+                </div>
+                <ul class="settings-descr">
+                    <li class="settings__descr-item">Поисковый агент присылает 1 письмо в неделю и только при условии,
+                        что найдены новые площадки</li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="settings__wrapper  st-mb">
+                <ul class="settings-list">
+                    <h4 class="settings__item-title">123</h4>
+                    <li class="settings-item-list content_block1">Seo <a class="close content_toggle1" href="#"><img
+                                src="images/close.png" alt=""></a></li>
+                    <li class="settings-item-list content_high1">Продвижение <a class="close content_close1"
+                            href="#"><img src="images/close.png" alt=""></a></li>
+                    <button class="settings-item__btn openModalWindow">Детали</button>
+
+                    <dialog class="modalWindow">
+                        <div class="modal__inner">
+                            <p class="dialog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                suscipit amet sequi in labore eum, est odio, libero id temporibus at dignissimos quasi
+                                dolorum animi illum voluptatum recusandae non? Culpa eos reiciendis non iusto id, cumque
+                                neque sit dignissimos enim laborum adipisci minima illo quibusdam in dolorum
+                                consectetur, harum ut numquam eum! Dolorum, harum dolores!</p>
+                            <button class="close-modalWindow"><img src="images/btn-close.png" alt="Close"></button>
+                        </div>
+                    </dialog>
+                </ul>
+                <div class="switch switcher">
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="settings__wrapper  st-mb">
+                <ul class="settings-list">
+                    <h4 class="settings__item-title">SEO</h4>
+                    <li class="settings-item-list content_block2">Seo <a class="close content_toggle2" href="#"><img
+                                src="images/close.png" alt=""></a></li>
+                    <li class="settings-item-list content_high2">Продвижение <a class="close content_close2"
+                            href="#"><img src="images/close.png" alt=""></a></li>
+                    <li class="settings-item-list content_up2">Аналитика <a class="close content_down2" href="#"><img
+                                src="images/close.png" alt=""></a></li>
+                    <button class="settings-item__btn openModalWin btn-mt">Детали</button>
+
+                    <dialog class="modalWin">
+                        <div class="modal__inner">
+                            <p class="dialog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                suscipit amet sequi in labore eum, est odio, libero id temporibus at dignissimos quasi
+                                dolorum animi illum voluptatum recusandae non? Culpa eos reiciendis non iusto id, cumque
+                                neque sit dignissimos enim laborum adipisci minima illo quibusdam in dolorum
+                                consectetur, harum ut numquam eum! Dolorum, harum dolores!</p>
+                            <button class="close-modalWin"><img src="images/btn-close.png" alt="Close"></button>
+                        </div>
+                    </dialog>
+
+                </ul>
+                <div class="switch switcher sw-mr">
+                    <input type="checkbox">
+                </div>
+
+            </div>
+            <div class="settings__wrapper  st-mb">
+                <ul class="settings-list">
+                    <h4 class="settings__item-title">Бурж ссылки</h4>
+                    <li class="settings-item-list content_block">Биржи ссылок: Не обнаружен<a
+                            class="close content_toggle" href="#"><img src="images/close.png" alt=""></a></li>
+                    <button class="settings-item__btn openModalShow ">Детали</button>
+
+                    <dialog class="modalShow">
+                        <div class="modal__inner">
+                            <p class="dialog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                suscipit amet sequi in labore eum, est odio, libero id temporibus at dignissimos quasi
+                                dolorum animi illum voluptatum recusandae non? Culpa eos reiciendis non iusto id, cumque
+                                neque sit dignissimos enim laborum adipisci minima illo quibusdam in dolorum
+                                consectetur, harum ut numquam eum! Dolorum, harum dolores!</p>
+                            <button class="close-modalShow"><img src="images/btn-close.png" alt="Close"></button>
+                        </div>
+                    </dialog>
+                </ul>
+                <div class="switch switcher">
+                    <input type="checkbox" checked>
+                </div>
+            </div>
+            <h3 class="settings__title company">Рекламные компании</h3>
+            <div class="settings__wrapper filter filter__item-drop st-mb">
+                <ul class="settings-list">
+                    <li class="settings-item">
+                        <p class="settings__item-text build">Строительство домов в Украине</p>
+                        <div class="switch switcher-item">
+                            <input id="n9" type="checkbox" checked>
+                        </div>
+                    </li>
+                    <li class="settings__span">
+                        <select class="notification-list settings__span">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+                    <li class="settings-item">
+                        <p class="settings__item-text">Строительство домов в Украине</p>
+                        <div class="switch switcher-item">
+                            <input type="checkbox">
+                        </div>
+                    </li>
+                    <li class="settings__span">
+                        <select class="notification-list settings__span">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="settings-descr">
+                    <li class="settings__descr-item items-list">
+                        <select class="notification-list">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+                    <li class="settings__descr-item items-list">
+                        <select class="notification-list">
+                            <option class="notification-item" value="now">Мгновенно</option>
+                            <option class="notification-item" value="one-at-the-day">1 раз в день</option>
+                            <option class="notification-item" value="disable">Отключить</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <h3 class="settings__title ">Уведомления по Телеграму</h3>
+            <div class="settings__wrapper st-mb">
+                <ul class="settings-list">
+                    <li class="settings-item">
+                        <p class="settings__item-text news">Новости</p>
+                        <div class="switch">
+                                <input type="checkbox">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="settings__wrapper wrapper-btns">
+                <a class="settings__wrapper-btn default butt" href="#" onclick="btnRes()">По умолчанию</a>
+                <a class="settings__wrapper-btn save openModalBtn"  href="#">Сохранить изменения</a>
+            </div>
+            <dialog class="modalBtn">
+                <div class="modal__inner">
+                    <p class="dialog-text">Вы уверены?</p>
+                    <div class="modal-btn">
+                        <a class="modal-button yes" onclick="notification()" href="#">Да</a>
+                        <a class="modal-button no" href="#">Нет</a>
+                    </div>
+                    <button class="close-modalBtn"><img src="images/btn-close.png" alt="Close"></button>
+                </div>
+            </dialog>
+
+            
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
